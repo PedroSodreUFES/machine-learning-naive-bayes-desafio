@@ -1,0 +1,1 @@
+# Modelo de Classificação Naive Bayes para um dataset de diabetes
