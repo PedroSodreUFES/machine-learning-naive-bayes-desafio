@@ -10,5 +10,5 @@ sns.lineplot(
   color="purple",
   linestyle='--'
 )
-plt.savefig("./dataviz/image.png")
+plt.savefig("./dataviz/image1.png")
 plt.close()

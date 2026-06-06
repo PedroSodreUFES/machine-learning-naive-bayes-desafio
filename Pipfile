@@ -17,6 +17,7 @@ flask-pydantic = "*"
 pyarrow = "*"
 optuna = "*"
 sweetviz = "*"
+matplotlib-stubs = "*"
 
 [dev-packages]
 
