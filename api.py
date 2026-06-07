@@ -21,7 +21,7 @@ def predict(body: request_body):
     y_pred = model.predict(df_predict)[0].astype(int)
 
     return jsonify({
-        'diabetes': y_pred.tolist()
+      'diabetes': y_pred.tolist()
     })
 
 if __name__ == '__main__':
