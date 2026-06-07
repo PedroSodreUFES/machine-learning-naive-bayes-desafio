@@ -53,29 +53,29 @@ Análise exploratŕoia das 3 variáveis: Glicemia, Pressão Arterial e Diabetes
 ### Diabetes - Target
 ![Diabetes](./dataviz/diabetes-porcentagem-barplot.png)
 
-    Pela distribuição proporcional de indivíduos com e sem diabetes, vê-se uma distribuição muito próxima da uniforme.
+Pela distribuição proporcional de indivíduos com e sem diabetes, vê-se uma distribuição muito próxima da uniforme.
 
 ### Glicemia
 ![Glicemia](./dataviz/glicemia-histogram.png)
 
-    Pela distribuição da glicemia, verifica-se uma distribuição normal.
+Pela distribuição da glicemia, verifica-se uma distribuição normal.
 
 ![Glicemia_Hue](./dataviz/glicemia-hue-histogram.png)
 
-    Contudo, pela influência da diabete, vê-se claramaente que indivíduos em extremos tendem a ter diabetes, enquanto indivíduos ao meio tenbdem a não ter.
+Contudo, pela influência da diabete, vê-se claramaente que indivíduos em extremos tendem a ter diabetes, enquanto indivíduos ao meio tenbdem a não ter.
 
 ![Glicemia Boxplot](./dataviz/glicemia-hue-boxplot.png)
 
-    É possível ver pelo boxplot como os dados de indíviduos com diabetes tem uma aplitude maior, enquanto os dados de indivíduos sem diabetes tem uma amplitude menor. Os outliers possuem explicação científica, logo não serão transformados, embora sejam casos raros.
+É possível ver pelo boxplot como os dados de indíviduos com diabetes tem uma aplitude maior, enquanto os dados de indivíduos sem diabetes tem uma amplitude menor. Os outliers possuem explicação científica, logo não serão transformados, embora sejam casos raros.
 
 ### Pressão Arterial
 ![Pressao Arterial](./dataviz/pressao-arterial-histogram.png)
 
-    A distribuição da pressão arterial se aproxima grosseiramente de uma distribuição normal com assimetria à esquerda(cauda à esquerda).
+A distribuição da pressão arterial se aproxima grosseiramente de uma distribuição normal com assimetria à esquerda(cauda à esquerda).
 
 ![Pressao_Arterial_Hue](./dataviz/pressao-arterial-hue-diabetes-histogram.png)
 
-    Ao ver a influência de ter diabetes ou não, vê-se um claro deslocamento à esquerda do gráfico para indivíduos com diabetes. Assim, pode-se dizer que indivíduos com diabetes tendem a ter menor pressão arterial que indivíduos sem diabetes.
+Ao ver a influência de ter diabetes ou não, vê-se um claro deslocamento à esquerda do gráfico para indivíduos com diabetes. Assim, pode-se dizer que indivíduos com diabetes tendem a ter menor pressão arterial que indivíduos sem diabetes.
 > Contudo, isso é uma particularidade dessa amostra, pois, na realidade, sabemos que indivíduos com diabetes tendem a ter pressão arterial maior, logo já podemos indicar isso como um ponto de melhoria do modelo.
 
 ## Treinamento do modelo
