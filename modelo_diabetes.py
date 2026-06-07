@@ -1,7 +1,10 @@
-import pandas as pd
+import joblib
 import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
-
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
+from sklearn.model_selection import train_test_split
 # 1: Ler dados
 df_diabetes = pd.read_csv("./dataset/diabetes.csv")
 print(df_diabetes.info())
@@ -104,3 +107,39 @@ plt.savefig("./dataviz/diabetes-porcentagem-barplot.png")
 plt.close()
 
 # 3: Treinamento do modelo
+X = df_diabetes.drop(columns=['diabetes'])
+y = df_diabetes.drop(columns=['pressao_arterial', 'glicemia'])
+
+X_train, X_test, y_train, y_test = train_test_split(
+  X,
+  y,
+  train_size=0.8,
+  shuffle=True,
+  random_state=51
+)
+
+model = GaussianNB()
+model.fit(X=X_train, y=y_train)
+y_pred = model.predict(X=X_test)
+
+# 4: Métricas
+classification_report_str = classification_report(
+  y_pred=y_pred,
+  y_true=y_test
+)
+print(f"Classification Report:\n{classification_report_str}")
+
+confusion_matrix_result = confusion_matrix(
+  y_pred=y_pred,
+  y_true=y_test
+)
+
+disp_confusion_matrix = ConfusionMatrixDisplay(confusion_matrix_result)
+
+disp_confusion_matrix.plot(cmap='Purples')
+plt.title("Matriz de Confusão")
+plt.savefig("./dataviz/matriz-de-confusao.png")
+plt.close()
+
+# Disponibilizar modelo
+joblib.dump(model, "modelo_diabetes.pkl")

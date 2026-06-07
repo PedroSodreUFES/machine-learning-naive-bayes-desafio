@@ -83,10 +83,24 @@ Utilizou-se o uso do algoritmo Naive Bayes para se adequar ao problema, separand
 
 ## Conclusões
 ### Métricas
-+ adicionar...
+|Recall|Precisão|F1-Score|
+|:-:|:-:|:-:|
+|0.95|0.95|0.95|
+
+O modelo mostra que as métricas obtidas são muito boas, logo ele é capaz de explicar a amostra.
+
+### Matriz de Confusão
+![Matriz de Confusão](./dataviz/matriz-de-confusao.png)
+
+A matriz de confusão elustra esses resultados:
++ Há 4 falsos positivos (alta precisão).
++ Há 6 falsos negativos (alto recall).
++ Há 189 registros classificados corretamente.
+
 ### Melhorias do modelo
-+ Na prática, indivíduos com diabetes tendem a ter pressão arterial maior, logo esse dataset não descreve bem a situação real.
-+ Há poucas variáveis.
++ Na prática, indivíduos com diabetes tendem a ter pressão arterial maior, logo esse dataset não descreve bem a situação real, visto que os coloca com pressão arterial menor.
++ Na prática, indivíduos com diabetes tendem a ter glicemia mais alta, devido à baixa presença de insulina, ou até mesmo sua ausência. Logo esses indivíduos não estão em ambos os extremos de glicemia, mas provavelmente devem estar deslocados mais à direita do histograma de glicemia, pois acabam retendo muita glicose no sangue.
++ Há poucas variáveis e poucos registros, logo maior complexidade deveria ser dada para um modelo como este.
 
 ## Créditos
 Pedro Sodré, 7 de Junho de 2026
