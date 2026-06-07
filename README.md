@@ -99,7 +99,7 @@ A matriz de confusão elustra esses resultados:
 
 ### Melhorias do modelo
 + Na prática, indivíduos com diabetes tendem a ter pressão arterial maior, logo esse dataset não descreve bem a situação real, visto que os coloca com pressão arterial menor.
-+ Na prática, indivíduos com diabetes tendem a ter glicemia mais alta, devido à baixa presença de insulina, ou até mesmo sua ausência. Logo esses indivíduos não estão em ambos os extremos de glicemia, mas provavelmente devem estar deslocados mais à direita do histograma de glicemia, pois acabam retendo muita glicose no sangue.
++ Na prática, indivíduos com diabetes tendem a ter glicemia mais alta devido à baixa presença de insulina, ou até mesmo a ausência desta. Logo esses indivíduos não estão em ambos os extremos de glicemia, mas provavelmente devem estar deslocados mais à direita do histograma de glicemia, pois acabam retendo muita glicose no sangue.
 + Há poucas variáveis e poucos registros, logo maior complexidade deveria ser dada para um modelo como este.
 
 ## Créditos
