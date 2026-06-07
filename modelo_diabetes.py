@@ -57,7 +57,7 @@ sns.boxplot(
   hue='diabetes_str',
 )
 plt.ylabel("Glicemia")
-plt.title("Boxplot por tipo de Glicemia")
+plt.title("Boxplot com base em diabetes - Glicemia")
 plt.savefig("./dataviz/glicemia-hue-boxplot.png")
 plt.close()
 
@@ -81,7 +81,7 @@ sns.histplot(
   palette='coolwarm',
   hue='diabetes_str'
 )
-plt.title("Histograma baseado em diabetes - Pressão Arterial")
+plt.title("Histograma com base em diabetes - Pressão Arterial")
 plt.ylabel("Frequência")
 plt.xlabel("Pressão Arterial")
 plt.savefig("./dataviz/pressao-arterial-hue-diabetes-histogram.png")
